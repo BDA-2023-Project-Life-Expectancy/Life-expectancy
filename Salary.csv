@@ -1,140 +1,64 @@
 Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Senior
 32.0,Male,1,Software Engineer,5.0,90000.0,UK,White,0
 28.0,Female,2,Data Analyst,3.0,65000.0,USA,Hispanic,0
-45.0,Male,3,Manager,15.0,150000.0,Canada,White,1
 36.0,Female,1,Sales Associate,7.0,60000.0,USA,Hispanic,0
-52.0,Male,2,Director,20.0,200000.0,USA,Asian,0
 29.0,Male,1,Marketing Analyst,2.0,55000.0,USA,Hispanic,0
 42.0,Female,2,Product Manager,12.0,120000.0,USA,Asian,0
 31.0,Male,1,Sales Manager,4.0,80000.0,China,Korean,0
 26.0,Female,1,Marketing Coordinator,1.0,45000.0,China,Chinese,0
-38.0,Male,3,Scientist,10.0,110000.0,Australia,Australian,1
 29.0,Male,2,Software Developer,3.0,75000.0,UK,Welsh,0
-48.0,Female,1,HR Manager,18.0,140000.0,UK,Asian,0
 35.0,Male,1,Financial Analyst,6.0,65000.0,China,Korean,0
 40.0,Female,2,Project Manager,14.0,130000.0,USA,African American,0
-27.0,Male,1,Customer Service Rep,2.0,40000.0,Canada,Asian,0
 44.0,Male,1,Operations Manager,16.0,125000.0,China,Chinese,0
 33.0,Female,2,Marketing Manager,7.0,90000.0,USA,Asian,0
-39.0,Male,3,Engineer,12.0,115000.0,UK,Mixed,1
-25.0,Female,1,Data Entry Clerk,0.0,35000.0,UK,Asian,0
 51.0,Male,1,Sales Director,22.0,180000.0,Australia,Asian,0
 34.0,Female,2,Business Analyst,5.0,80000.0,China,Korean,0
-47.0,Male,2,VP of Operations,19.0,190000.0,UK,White,0
-30.0,Male,1,IT Support,2.0,50000.0,UK,Asian,0
-36.0,Female,1,Recruiter,9.0,60000.0,China,White,0
 41.0,Male,2,Financial Manager,13.0,140000.0,USA,African American,0
-28.0,Female,1,Social Media Specialist,3.0,45000.0,Canada,White,0
-37.0,Female,2,Software Manager,11.0,110000.0,Australia,Asian,0
-24.0,Male,1,Developer,1.0,40000.0,Australia,Asian,0
-43.0,Female,3,Consultant,15.0,140000.0,Canada,Black,1
 33.0,Male,2,Product Designer,6.0,90000.0,China,Korean,0
-50.0,Male,1,CEO,25.0,250000.0,Canada,Asian,0
-31.0,Female,1,Accountant,4.0,55000.0,UK,White,0
 29.0,Male,2,Data Scientist,3.0,75000.0,USA,Hispanic,0
-39.0,Female,1,Marketing Specialist,10.0,65000.0,Canada,White,0
-46.0,Male,3,Manager,20.0,170000.0,USA,Hispanic,1
-27.0,Male,1,Technical Writer,2.0,45000.0,Australia,Asian,0
 35.0,Female,1,HR Generalist,7.0,60000.0,UK,White,0
 42.0,Male,2,Project Engineer,14.0,115000.0,China,White,0
-26.0,Female,1,Customer Success Rep,1.0,40000.0,Canada,Asian,0
 49.0,Male,1,Sales Executive,21.0,160000.0,China,White,0
-34.0,Female,2,UX Designer,5.0,80000.0,UK,Asian,0
-48.0,Male,2,Operations Director,18.0,190000.0,Canada,Black,0
-30.0,Male,1,Network Engineer,3.0,60000.0,China,Korean,0
-36.0,Female,1,Administrative Assistant,8.0,45000.0,UK,Asian,0
-41.0,Male,2,Strategy Consultant,13.0,130000.0,UK,Asian,0
-28.0,Female,1,Copywriter,2.0,40000.0,USA,White,0
-32.0,Male,1,Account Manager,5.0,75000.0,Australia,Asian,0
 45.0,Female,2,Director of Marketing,16.0,180000.0,UK,Welsh,0
-38.0,Male,3,Scientist,11.0,120000.0,Australia,Asian,1
-25.0,Male,1,Help Desk Analyst,0.0,35000.0,USA,Asian,0
-51.0,Female,1,Customer Service Manager,22.0,130000.0,China,Korean,0
-33.0,Male,2,Business Intelligence Analyst,7.0,85000.0,Australia,Australian,0
-40.0,Female,1,Event Coordinator,12.0,60000.0,China,White,0
-47.0,Male,2,VP of Finance,19.0,200000.0,Australia,Asian,0
 29.0,Female,1,Graphic Designer,3.0,50000.0,Canada,Black,0
 36.0,Male,1,Sales Manager,9.0,95000.0,China,Korean,0
-27.0,Female,2,UX Researcher,2.0,65000.0,Canada,White,0
-43.0,Male,3,Engineer,17.0,140000.0,USA,Hispanic,1
-30.0,Female,1,Social Media Manager,4.0,55000.0,Canada,White,0
 35.0,Male,2,Product Manager,7.0,105000.0,Canada,Asian,0
-51.0,Female,2,Director of Operations,23.0,170000.0,USA,African American,0
 29.0,Male,1,Marketing Analyst,3.0,50000.0,China,Chinese,0
-40.0,Female,1,HR Manager,12.0,80000.0,China,Korean,0
 47.0,Male,3,Data Scientist,21.0,180000.0,China,White,1
-26.0,Male,1,Accountant,1.0,35000.0,Australia,Australian,0
 38.0,Female,2,Digital Marketing Manager,10.0,90000.0,China,Korean,0
-46.0,Male,1,IT Manager,19.0,120000.0,Australia,Australian,0
-31.0,Female,1,Customer Service Representative,5.0,45000.0,Canada,Asian,0
-34.0,Male,2,Business Development Manager,8.0,90000.0,Canada,Asian,0
 49.0,Female,2,Financial Analyst,18.0,150000.0,Canada,White,1
 33.0,Male,1,Web Developer,6.0,65000.0,USA,Hispanic,0
-39.0,Female,1,Recruiter,11.0,70000.0,USA,Asian,0
 45.0,Male,3,Research Director,16.0,190000.0,UK,Mixed,0
-28.0,Male,1,Technical Support Specialist,2.0,40000.0,China,Korean,0
-42.0,Female,2,Creative Director,14.0,120000.0,Canada,Black,0
 37.0,Male,1,Project Manager,10.0,95000.0,USA,Asian,0
 50.0,Female,1,Operations Manager,22.0,160000.0,USA,White,0
 32.0,Male,2,Software Engineer,6.0,100000.0,USA,African American,1
-48.0,Female,2,Human Resources Director,20.0,180000.0,Canada,Black,0
 30.0,Female,1,Content Marketing Manager,3.0,55000.0,Australia,White,0
-36.0,Male,1,Technical Recruiter,8.0,70000.0,UK,Asian,0
 41.0,Female,2,Data Analyst,13.0,80000.0,USA,White,0
 25.0,Male,1,Sales Representative,0.0,30000.0,Australia,Asian,0
-52.0,Male,3,Chief Technology Officer,24.0,250000.0,Canada,Black,0
-29.0,Female,1,Designer,2.0,40000.0,Australia,Asian,0
-34.0,Female,2,Financial Advisor,10.0,95000.0,UK,White,0
-27.0,Male,1,Account Manager,2.0,45000.0,Canada,White,0
 40.0,Female,1,HR Generalist,15.0,80000.0,USA,Hispanic,0
 46.0,Male,2,Project Manager,21.0,135000.0,Canada,Asian,1
 31.0,Female,1,Marketing Coordinator,6.0,55000.0,Australia,Asian,0
-36.0,Male,3,Principal Scientist,11.0,120000.0,UK,Mixed,0
 29.0,Female,1,Sales Associate,3.0,40000.0,China,White,0
-43.0,Male,1,Supply Chain Manager,18.0,105000.0,UK,Welsh,0
 52.0,Female,2,Marketing Manager,25.0,170000.0,China,Chinese,1
 33.0,Male,1,Business Analyst,7.0,75000.0,Australia,Australian,0
-39.0,Female,1,Training Specialist,12.0,65000.0,USA,African American,0
 47.0,Male,3,Research Scientist,22.0,160000.0,Australia,Asian,0
 26.0,Male,1,Software Developer,1.0,35000.0,China,White,0
-38.0,Female,2,Public Relations Manager,10.0,90000.0,UK,Asian,0
-45.0,Male,1,Operations Analyst,20.0,110000.0,China,Chinese,0
-31.0,Female,1,Event Coordinator,5.0,45000.0,Australia,Asian,0
 35.0,Male,2,Product Marketing Manager,8.0,95000.0,China,White,0
-49.0,Female,2,HR Manager,19.0,150000.0,Australia,White,1
 33.0,Male,1,Web Developer,5.0,50000.0,Canada,Asian,0
-39.0,Female,2,Project Coordinator,13.0,80000.0,UK,Welsh,1
-44.0,Male,3,Chief Data Officer,16.0,220000.0,USA,African American,0
-30.0,Female,1,Digital Content Producer,3.0,50000.0,UK,White,0
-36.0,Male,1,IT Support Specialist,7.0,60000.0,USA,Asian,0
 41.0,Female,2,Marketing Analyst,14.0,100000.0,USA,White,1
-28.0,Male,1,Customer Success Manager,2.0,40000.0,USA,Hispanic,0
 42.0,Female,2,Graphic Designer,15.0,110000.0,USA,Asian,1
-37.0,Male,1,Software Project Manager,9.0,95000.0,UK,White,0
-50.0,Female,1,Supply Chain Analyst,22.0,130000.0,UK,Welsh,0
 32.0,Male,2,Business Analyst,6.0,90000.0,USA,Asian,1
 23.0,Female,1,Marketing Analyst,0.5,35000.0,USA,White,0
 31.0,Male,2,Financial Analyst,6.0,95000.0,Australia,Asian,1
-40.0,Female,1,Office Manager,15.0,65000.0,USA,White,0
-48.0,Male,3,Principal Engineer,20.0,170000.0,USA,Hispanic,0
 29.0,Female,1,HR Generalist,3.0,45000.0,Australia,Australian,0
 35.0,Male,2,Product Manager,10.0,120000.0,Canada,White,1
 42.0,Female,1,Sales Manager,17.0,100000.0,China,Korean,0
 53.0,Male,2,Director of Marketing,25.0,180000.0,UK,Mixed,0
-33.0,Female,1,Operations Analyst,5.0,50000.0,Australia,Australian,0
-38.0,Male,1,Customer Service Manager,11.0,80000.0,China,White,0
-44.0,Female,3,Scientist,16.0,140000.0,UK,Mixed,1
-26.0,Male,1,Accountant,2.0,40000.0,UK,White,0
 37.0,Female,2,HR Generalist,9.0,95000.0,USA,African American,1
-45.0,Male,1,Sales Operations Manager,18.0,110000.0,UK,White,0
 32.0,Female,1,Marketing Coordinator,4.0,50000.0,USA,White,0
 34.0,Male,2,Software Developer,8.0,105000.0,Canada,White,1
-50.0,Female,2,Director of Operations,21.0,160000.0,UK,White,0
-29.0,Male,1,Web Designer,3.0,45000.0,China,White,0
-40.0,Female,2,Training Specialist,12.0,100000.0,Canada,Black,1
 47.0,Male,3,Research Scientist,22.0,160000.0,USA,Hispanic,1
 27.0,Male,1,Sales Representative,1.0,35000.0,UK,Mixed,0
-39.0,Female,1,Administrative Assistant,10.0,55000.0,Canada,Black,0
 46.0,Male,2,Project Manager,19.0,140000.0,Canada,Black,1
 30.0,Female,1,Marketing Manager,4.0,50000.0,Canada,White,0
 36.0,Male,1,Data Analyst,7.0,60000.0,Australia,Asian,0
@@ -143,102 +67,54 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 41.0,Female,2,Marketing Manager,13.0,110000.0,Australia,Australian,1
 33.0,Male,1,Software Developer,5.0,50000.0,USA,Hispanic,0
 47.0,Male,1,Sales Manager,20.0,135000.0,China,White,1
-25.0,Female,2,Marketing Specialist,1.5,40000.0,Australia,Asian,0
 34.0,Male,1,Business Analyst,8.0,90000.0,Australia,Asian,1
 42.0,Female,3,Data Scientist,16.0,150000.0,China,Chinese,1
 31.0,Male,1,Project Manager,4.0,60000.0,UK,Welsh,0
-38.0,Female,1,Accountant,10.0,80000.0,USA,African American,1
-45.0,Male,2,Director of Sales,19.0,175000.0,Canada,Black,0
-29.0,Female,1,Recruiter,3.0,45000.0,Australia,Australian,0
-36.0,Male,2,Business Development Manager,11.0,120000.0,Canada,Black,1
 43.0,Female,3,Product Designer,18.0,140000.0,Australia,Asian,1
-26.0,Male,1,Customer Support Specialist,2.0,35000.0,USA,Asian,0
 37.0,Female,2,Marketing Analyst,9.0,95000.0,Canada,White,1
-44.0,Male,1,IT Support Specialist,14.0,110000.0,USA,African American,1
 32.0,Female,1,Financial Analyst,5.0,50000.0,USA,Asian,0
 33.0,Male,2,Operations Manager,7.0,115000.0,China,Korean,1
-51.0,Female,3,Director of Human Resources,23.0,185000.0,China,Chinese,0
 28.0,Male,1,Software Engineer,2.0,40000.0,Australia,White,0
 39.0,Female,1,Sales Representative,12.0,90000.0,USA,Asian,1
-48.0,Male,2,Director of Product Management,21.0,175000.0,USA,Asian,0
-30.0,Female,1,Copywriter,3.0,45000.0,UK,Mixed,0
 35.0,Male,1,Marketing Coordinator,7.0,80000.0,China,White,1
 41.0,Female,2,Human Resources Manager,13.0,120000.0,China,Korean,1
-27.0,Male,1,Business Development Associate,1.5,35000.0,China,White,0
-40.0,Female,1,Account Manager,14.0,110000.0,Australia,Australian,1
-46.0,Male,3,Researcher,18.0,150000.0,Canada,Black,1
 31.0,Female,1,HR Coordinator,4.0,50000.0,China,Korean,0
 34.0,Male,2,Software Engineer,9.0,105000.0,China,Korean,1
-50.0,Female,2,Director of Finance,20.0,180000.0,Australia,Australian,0
 29.0,Male,1,Marketing Coordinator,2.0,40000.0,Canada,Asian,0
 43.0,Male,1,Project Manager,16.0,140000.0,UK,White,1
 26.0,Female,2,Data Scientist,1.5,45000.0,Canada,Asian,0
-35.0,Male,1,Operations Analyst,7.0,85000.0,China,White,1
 42.0,Female,3,Marketing Manager,18.0,140000.0,UK,Asian,1
-31.0,Male,1,Accountant,4.0,50000.0,UK,Welsh,0
 38.0,Female,1,Human Resources Coordinator,10.0,80000.0,UK,Asian,1
-46.0,Male,2,Director of Operations,20.0,170000.0,USA,Asian,0
 29.0,Female,1,Sales Representative,2.0,40000.0,UK,Welsh,0
 37.0,Male,2,Business Analyst,9.0,105000.0,China,Chinese,1
-44.0,Female,3,UX Designer,15.0,145000.0,USA,Hispanic,1
 27.0,Male,1,Product Manager,2.0,40000.0,USA,Hispanic,0
-36.0,Female,1,Marketing Specialist,8.0,85000.0,USA,African American,1
-43.0,Male,1,IT Project Manager,14.0,130000.0,China,Chinese,1
 33.0,Female,2,Financial Analyst,6.0,95000.0,Canada,White,1
-34.0,Male,1,Quality Assurance Analyst,9.0,100000.0,UK,Mixed,1
-50.0,Female,3,Director of Sales and Marketing,22.0,180000.0,China,Korean,0
-28.0,Male,1,Operations Analyst,1.5,35000.0,UK,Welsh,0
-39.0,Female,1,Account Executive,12.0,95000.0,USA,African American,1
-47.0,Male,2,Director of Business Development,19.0,170000.0,Australia,Asian,0
-30.0,Female,1,Social Media Manager,3.0,45000.0,Australia,Australian,0
 34.0,Male,1,Product Manager,7.0,95000.0,China,Chinese,1
-40.0,Female,2,Human Resources Specialist,13.0,120000.0,UK,Welsh,1
 28.0,Male,1,Business Analyst,2.0,40000.0,USA,African American,0
 41.0,Female,1,Marketing Coordinator,11.0,90000.0,Canada,Asian,1
 45.0,Male,3,Data Analyst,17.0,155000.0,UK,Asian,1
-32.0,Female,1,Account Manager,5.0,55000.0,Australia,Asian,0
 35.0,Male,2,Software Developer,9.0,110000.0,Canada,Asian,1
-49.0,Female,2,Director of Human Capital,21.0,180000.0,UK,Mixed,0
-30.0,Male,1,Advertising Coordinator,3.0,45000.0,UK,White,0
 44.0,Male,1,Sales Manager,16.0,130000.0,USA,Asian,1
-27.0,Female,2,UX Designer,1.5,45000.0,USA,Hispanic,0
-36.0,Male,1,Accountant,7.0,90000.0,Canada,White,1
 41.0,Female,3,Marketing Director,17.0,160000.0,UK,Mixed,1
 31.0,Male,1,HR Generalist,4.0,50000.0,China,Chinese,0
 39.0,Female,1,Operations Manager,10.0,120000.0,Australia,Asian,1
-47.0,Male,2,Director of Finance,20.0,170000.0,Australia,Australian,0
 30.0,Female,1,Marketing Coordinator,2.0,40000.0,China,Korean,0
-38.0,Male,2,IT Consultant,9.0,110000.0,China,White,1
 45.0,Female,3,Product Designer,15.0,150000.0,China,Chinese,1
-28.0,Male,1,Business Development Associate,2.0,40000.0,USA,Asian,0
 35.0,Female,1,Marketing Analyst,8.0,85000.0,USA,White,1
 44.0,Male,1,Software Engineer,14.0,130000.0,China,Chinese,1
-34.0,Female,2,Financial Advisor,6.0,100000.0,UK,Welsh,1
-35.0,Male,1,Project Coordinator,9.0,95000.0,Canada,White,1
-50.0,Female,3,Director of Operations,22.0,180000.0,Australia,Australian,0
-29.0,Male,1,Business Operations Analyst,1.5,35000.0,UK,Asian,0
 40.0,Female,1,Sales Representative,12.0,100000.0,China,Chinese,1
 48.0,Male,2,Director of Marketing,19.0,170000.0,USA,Hispanic,0
-31.0,Female,1,Social Media Specialist,3.0,45000.0,UK,Welsh,0
-33.0,Male,1,Product Development Manager,7.0,100000.0,USA,Hispanic,1
 42.0,Female,2,Human Resources Manager,13.0,140000.0,China,White,1
 28.0,Male,1,Financial Analyst,2.0,40000.0,Australia,Australian,0
 40.0,Female,1,Marketing Manager,11.0,105000.0,UK,White,1
 46.0,Male,3,Data Scientist,18.0,160000.0,Canada,White,1
 33.0,Female,1,Operations Manager,5.0,70000.0,Australia,Asian,0
-37.0,Male,2,Software Architect,9.0,120000.0,Australia,Australian,1
-51.0,Female,2,Director of Human Resources,21.0,190000.0,USA,Hispanic,0
-30.0,Male,1,Marketing Specialist,3.0,45000.0,Canada,Black,0
 43.0,Male,1,Project Manager,15.0,120000.0,Canada,Asian,1
 27.0,Female,2,Research Scientist,1.5,50000.0,China,White,0
-35.0,Male,1,Operations Analyst,8.0,85000.0,Canada,White,1
 42.0,Female,3,Marketing Manager,13.0,140000.0,Canada,White,1
 32.0,Male,1,Sales Representative,3.0,45000.0,Australia,White,0
 37.0,Female,1,Financial Analyst,9.0,100000.0,UK,Welsh,1
 45.0,Male,2,Software Developer,16.0,140000.0,Australia,Asian,1
-33.0,Female,1,Operations Analyst,5.0,70000.0,Canada,Asian,0
-39.0,Male,1,Marketing Specialist,10.0,120000.0,Canada,Black,1
-44.0,Female,3,HR Manager,18.0,160000.0,Canada,White,1
 29.0,Male,1,Business Analyst,1.5,40000.0,Australia,Australian,0
 38.0,Female,1,Product Manager,10.0,120000.0,China,Korean,1
 46.0,Male,3,Data Analyst,19.0,150000.0,UK,Asian,1
@@ -246,28 +122,17 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 36.0,Male,1,Operations Manager,8.0,95000.0,USA,White,1
 49.0,Female,2,Director of Marketing,21.0,180000.0,Canada,White,0
 31.0,Male,1,Financial Analyst,3.0,50000.0,Canada,Black,0
-41.0,Female,1,Project Coordinator,11.0,95000.0,USA,African American,1
-47.0,Male,2,Director of Operations,20.0,170000.0,Canada,White,0
 30.0,Female,1,Marketing Coordinator,2.0,40000.0,USA,White,0
-38.0,Male,2,IT Consultant,9.0,110000.0,Australia,Australian,1
 45.0,Female,3,Product Designer,15.0,150000.0,China,Korean,1
-28.0,Male,1,Business Development Associate,2.0,40000.0,USA,Asian,0
 35.0,Female,1,Marketing Analyst,8.0,85000.0,Canada,White,1
 44.0,Male,1,Software Engineer,14.0,130000.0,Australia,Australian,1
-34.0,Female,2,Financial Advisor,6.0,100000.0,Australia,Australian,1
-35.0,Male,1,Project Coordinator,9.0,95000.0,UK,Asian,1
-50.0,Female,3,Director of Operations,22.0,180000.0,Australia,White,0
-29.0,Male,1,Business Operations Analyst,1.5,350.0,USA,Hispanic,0
 37.0,Female,1,Financial Manager,10.0,120000.0,USA,African American,1
 46.0,Male,3,Data Scientist,18.0,160000.0,China,Chinese,1
 31.0,Female,1,Marketing Coordinator,3.0,50000.0,Australia,White,0
 42.0,Male,1,Operations Manager,12.0,110000.0,Canada,Black,1
 29.0,Female,1,Sales Representative,1.5,40000.0,USA,African American,0
-36.0,Male,1,Marketing Specialist,8.0,95000.0,UK,White,1
-44.0,Female,2,HR Specialist,15.0,140000.0,China,Chinese,1
 33.0,Male,1,Operations Manager,4.0,60000.0,China,Korean,0
 39.0,Female,1,Marketing Coordinator,9.0,110000.0,China,White,1
-45.0,Male,3,Data Engineer,16.0,150000.0,Australia,Asian,1
 32.0,Female,1,Marketing Manager,4.0,60000.0,UK,Welsh,0
 37.0,Male,1,Financial Analyst,8.0,90000.0,Australia,Australian,1
 47.0,Female,2,Director of Marketing,20.0,180000.0,UK,Mixed,0
@@ -276,11 +141,7 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 46.0,Male,3,Data Analyst,17.0,160000.0,UK,Asian,1
 34.0,Female,1,Financial Analyst,5.0,70000.0,UK,Mixed,0
 36.0,Male,1,Product Manager,8.0,95000.0,Australia,Asian,1
-49.0,Female,2,Director of Operations,21.0,180000.0,UK,Mixed,0
-31.0,Male,1,Operations Analyst,3.0,50000.0,USA,Hispanic,0
-41.0,Female,1,Project Coordinator,11.0,95000.0,Canada,Black,1
 47.0,Male,2,Director of Marketing,19.0,170000.0,Canada,White,0
-29.0,Female,1,Business Development Associate,1.5,35000.0,Australia,White,0
 35.0,Male,1,Financial Manager,9.0,100000.0,Canada,White,1
 44.0,Female,3,Product Designer,15.0,150000.0,China,White,1
 33.0,Male,1,Business Analyst,4.0,60000.0,Canada,Black,0
@@ -288,89 +149,59 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 44.0,Male,1,Software Engineer,13.0,130000.0,Canada,White,1
 32.0,Male,1,Product Manager,4.0,65000.0,China,Chinese,0
 38.0,Female,1,Business Analyst,10.0,110000.0,Australia,Asian,1
-49.0,Male,3,Director of Operations,21.0,180000.0,USA,Asian,0
-29.0,Female,1,Marketing Specialist,2.0,40000.0,Australia,Australian,0
-35.0,Male,1,Business Development Manager,7.0,90000.0,USA,Hispanic,1
-45.0,Female,2,HR Manager,14.0,140000.0,UK,Welsh,1
 33.0,Male,1,Financial Analyst,4.0,60000.0,China,Korean,0
 40.0,Female,1,Marketing Manager,12.0,130000.0,Australia,Asian,1
 44.0,Male,3,Data Scientist,16.0,160000.0,Australia,Asian,1
-30.0,Female,1,Operations Coordinator,2.0,40000.0,Australia,White,0
 37.0,Male,1,Marketing Analyst,9.0,100000.0,UK,Mixed,1
 48.0,Female,2,Director of HR,20.0,180000.0,USA,Hispanic,0
 31.0,Male,1,Project Manager,3.0,55000.0,Canada,Black,0
-38.0,Female,1,Operations Coordinator,9.0,120000.0,Canada,Asian,1
-45.0,Male,3,Data Engineer,16.0,150000.0,Canada,Black,1
 33.0,Female,1,Marketing Manager,5.0,70000.0,UK,Mixed,0
 36.0,Male,1,Business Analyst,8.0,95000.0,China,Chinese,1
 49.0,Female,2,Director of Marketing,21.0,180000.0,China,White,0
-31.0,Male,1,Operations Analyst,3.0,50000.0,Canada,Black,0
 42.0,Female,1,Project Manager,12.0,120000.0,Australia,White,1
 47.0,Male,2,Director of Marketing,19.0,170000.0,UK,White,0
-29.0,Female,1,Business Development Associate,1.5,35000.0,Australia,White,0
 35.0,Male,1,Financial Manager,9.0,100000.0,Australia,Asian,1
 44.0,Female,3,Product Designer,15.0,150000.0,Australia,Asian,1
 33.0,Male,1,Business Analyst,4.0,60000.0,UK,White,0
 35.0,Female,1,Marketing Analyst,8.0,85000.0,Canada,Black,1
 44.0,Male,1,Software Engineer,13.0,130000.0,Australia,White,1
-34.0,Female,2,Financial Advisor,6.0,80000.0,Canada,White,1
-36.0,Male,1,Marketing Specialist,8.0,95000.0,Canada,White,1
 30.0,Female,1,HR Coordinator,2.0,40000.0,UK,Welsh,0
-37.0,Male,1,Business Development Manager,10.0,120000.0,China,Chinese,1
 45.0,Female,2,Marketing Manager,16.0,160000.0,Canada,Black,1
-32.0,Male,1,Financial Advisor,4.0,65000.0,USA,Hispanic,0
 39.0,Female,1,Project Manager,12.0,130000.0,Canada,White,1
-47.0,Male,3,Director of Engineering,20.0,180000.0,China,White,0
 29.0,Female,1,Marketing Analyst,2.0,40000.0,Australia,Australian,0
 36.0,Male,1,Operations Manager,9.0,100000.0,UK,Asian,1
 43.0,Female,3,Data Scientist,15.0,150000.0,USA,African American,1
 32.0,Male,1,Marketing Coordinator,3.0,55000.0,Canada,White,0
 38.0,Female,1,Business Analyst,10.0,110000.0,China,White,1
 48.0,Male,2,Director of Marketing,21.0,180000.0,China,Chinese,0
-31.0,Female,1,Business Development Associate,3.0,50000.0,China,Korean,0
 40.0,Male,1,Financial Analyst,12.0,130000.0,Australia,White,1
-45.0,Female,3,UX Designer,16.0,160000.0,Australia,Asian,1
 33.0,Male,1,Product Manager,4.0,60000.0,Canada,Asian,0
 36.0,Female,1,Marketing Manager,8.0,95000.0,China,Korean,1
-47.0,Male,2,Director of Operations,19.0,170000.0,China,Chinese,0
 29.0,Female,1,Project Manager,2.0,40000.0,UK,Mixed,0
-34.0,Male,1,Operations Coordinator,7.0,90000.0,UK,Asian,1
 44.0,Female,3,Business Analyst,15.0,150000.0,UK,White,1
-33.0,Male,1,Marketing Specialist,5.0,70000.0,UK,Welsh,0
 35.0,Female,1,Financial Manager,8.0,90000.0,Australia,White,1
 43.0,Male,2,Director of Marketing,18.0,170000.0,China,Korean,0
 31.0,Female,1,Financial Analyst,3.0,50000.0,UK,Asian,0
 41.0,Male,1,Product Manager,14.0,150000.0,Canada,White,1
-44.0,Female,3,Data Engineer,16.0,160000.0,Canada,Asian,1
 33.0,Male,1,Business Analyst,4.0,60000.0,Canada,Black,0
 35.0,Female,1,Marketing Analyst,8.0,85000.0,Canada,Asian,1
-45.0,Male,2,Director of Engineering,19.0,180000.0,China,Chinese,0
 28.0,Female,1,Operations Manager,1.0,35000.0,Canada,Asian,0
-36.0,Male,1,Business Development Manager,8.0,110000.0,USA,Asian,1
 44.0,Female,3,Data Scientist,16.0,160000.0,China,Chinese,1
 31.0,Male,1,Marketing Coordinator,3.0,55000.0,Canada,Black,0
 38.0,Female,1,Business Analyst,10.0,110000.0,Canada,Black,1
 48.0,Male,2,Director of Marketing,21.0,180000.0,Canada,Asian,0
-31.0,Female,1,Business Development Associate,3.0,50000.0,Canada,Black,0
 40.0,Male,1,Financial Analyst,12.0,130000.0,USA,White,1
-45.0,Female,3,UX Designer,16.0,160000.0,UK,Asian,1
 33.0,Male,1,Product Manager,4.0,60000.0,Canada,White,0
 36.0,Female,1,Marketing Manager,8.0,95000.0,UK,Welsh,1
-47.0,Male,2,Director of Operations,19.0,170000.0,UK,Welsh,0
 29.0,Female,1,Project Manager,2.0,40000.0,Australia,Australian,0
-34.0,Male,1,Operations Coordinator,7.0,90000.0,China,Chinese,1
 44.0,Female,3,Business Analyst,15.0,150000.0,UK,Welsh,1
-33.0,Male,1,Marketing Specialist,5.0,70000.0,Canada,White,0
 35.0,Female,1,Financial Manager,8.0,90000.0,China,Chinese,1
 43.0,Male,2,Director of Marketing,18.0,170000.0,Canada,Asian,0
 31.0,Female,1,Financial Analyst,3.0,50000.0,Canada,Black,0
 41.0,Male,1,Product Manager,14.0,150000.0,China,Chinese,1
-44.0,Female,3,Data Engineer,16.0,160000.0,Australia,White,1
 33.0,Male,1,Business Analyst,4.0,60000.0,UK,Welsh,0
 35.0,Female,1,Marketing Analyst,8.0,85000.0,China,White,1
-43.0,Male,2,Director of Operations,19.0,170000.0,China,White,0
 29.0,Female,1,Project Manager,2.0,40000.0,USA,Asian,0
-34.0,Male,1,Operations Coordinator,7.0,90000.0,China,White,1
 44.0,Female,3,Business Analyst,15.0,150000.0,UK,White,1
 31.0,Male,2,Data Scientist,6.0,160000.0,Australia,White,0
 28.0,Female,1,Software Engineer,3.0,125000.0,Canada,Black,0
@@ -4509,7 +4340,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 26.0,Female,1,HR Coordinator,1.0,35000.0,Canada,White,0
 42.0,Male,3,Human Resources Manager,14.0,130000.0,UK,Asian,1
 34.0,Female,2,Director of HR,9.0,95000.0,China,Korean,0
-28.0,Male,0,Juniour HR Generalist,2.0,43000.0,UK,Welsh,0
 31.0,Female,1,HR Coordinator,4.0,50000.0,China,Korean,0
 29.0,Male,1,Web Developer,3.0,60000.0,Canada,Black,0
 35.0,Female,2,HR Generalist,8.0,80000.0,UK,White,1
@@ -4518,7 +4348,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 34.0,Male,1,Web Developer,7.0,85000.0,USA,Asian,0
 26.0,Female,1,HR Generalist,2.0,42000.0,UK,White,0
 29.0,Male,2,HR Generalist,4.0,70000.0,USA,Hispanic,1
-25.0,Female,0,Juniour HR Coordinator,1.0,32000.0,China,White,0
 33.0,Male,2,Web Developer,6.0,80000.0,China,White,0
 27.0,Female,1,HR Generalist,2.0,42000.0,Canada,Asian,0
 31.0,Male,3,Human Resources Manager,7.0,90000.0,UK,Welsh,1
@@ -4532,7 +4361,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 25.0,Male,0,HR Generalist,2.0,40000.0,UK,Asian,0
 26.0,Female,2,HR Generalist,2.0,55000.0,China,Korean,1
 30.0,Male,1,Web Developer,5.0,70000.0,USA,Asian,0
-24.0,Female,0,Juniour HR Coordinator,1.0,32000.0,Canada,Black,0
 31.0,Male,2,Director of HR,7.0,90000.0,China,White,0
 27.0,Female,1,Web Developer,2.0,50000.0,UK,Mixed,0
 35.0,Male,3,Human Resources Manager,10.0,110000.0,USA,White,1
@@ -4548,7 +4376,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 26.0,Male,1,HR Coordinator,2.0,38000.0,USA,White,0
 42.0,Female,2,Human Resources Manager,13.0,125000.0,UK,Asian,1
 34.0,Male,2,Web Developer,8.0,90000.0,Australia,White,0
-28.0,Female,0,Juniour HR Generalist,2.0,43000.0,China,Chinese,0
 31.0,Male,1,HR Generalist,5.0,60000.0,Canada,Black,0
 29.0,Female,2,Web Developer,3.0,60000.0,China,Korean,0
 35.0,Male,3,Human Resources Manager,10.0,110000.0,UK,Mixed,1
@@ -4584,7 +4411,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 25.0,Male,0,HR Generalist,2.0,40000.0,Australia,Asian,0
 26.0,Female,2,HR Generalist,2.0,55000.0,China,Chinese,1
 30.0,Male,1,Web Developer,5.0,70000.0,Canada,Black,0
-24.0,Female,0,Juniour HR Coordinator,1.0,32000.0,Canada,White,0
 31.0,Male,2,Director of HR,7.0,90000.0,Australia,Asian,0
 27.0,Female,1,Web Developer,2.0,50000.0,Australia,Asian,0
 35.0,Male,3,Human Resources Manager,10.0,110000.0,China,Chinese,1
@@ -4600,7 +4426,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 26.0,Male,1,HR Coordinator,2.0,38000.0,Canada,White,0
 42.0,Female,2,Human Resources Manager,13.0,125000.0,USA,Asian,1
 34.0,Male,2,Web Developer,8.0,90000.0,Canada,Asian,0
-28.0,Female,0,Juniour HR Generalist,2.0,43000.0,China,White,0
 31.0,Male,1,HR Generalist,5.0,60000.0,UK,Asian,0
 29.0,Female,2,Web Developer,3.0,60000.0,USA,White,0
 35.0,Male,3,Human Resources Manager,10.0,110000.0,USA,Hispanic,1
@@ -5112,11 +4937,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 35.0,Male,1,Project Manager,10.0,130000.0,Canada,Black,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,USA,Hispanic,0
 42.0,Male,2,Software Engineer,18.0,180000.0,China,Korean,1
-29.0,Female,1,Digital Marketing Specialist,3.0,60000.0,Canada,Asian,0
 33.0,Male,1,Marketing Manager,7.0,110000.0,Australia,Asian,0
 24.0,Female,0,Sales Associate,0.0,25000.0,UK,White,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,UK,White,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,USA,African American,0
 32.0,Male,3,Data Scientist,9.0,140000.0,UK,Asian,0
 22.0,Female,0,Receptionist,0.0,25000.0,UK,Asian,0
 37.0,Male,1,Product Manager,12.0,150000.0,UK,Welsh,0
@@ -5140,11 +4963,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 35.0,Male,1,Project Manager,10.0,130000.0,UK,Asian,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,UK,Asian,0
 42.0,Male,2,Software Engineer,18.0,180000.0,UK,Asian,1
-29.0,Female,1,Digital Marketing Specialist,3.0,60000.0,USA,Hispanic,0
 33.0,Male,1,Marketing Manager,7.0,110000.0,Canada,Asian,0
 24.0,Female,0,Sales Associate,0.0,25000.0,Canada,Black,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,China,White,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,USA,African American,0
 32.0,Male,3,Data Scientist,9.0,140000.0,USA,Asian,0
 22.0,Female,0,Receptionist,0.0,25000.0,UK,White,0
 37.0,Male,1,Product Manager,12.0,150000.0,Canada,Asian,0
@@ -5168,11 +4989,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 35.0,Male,1,Project Manager,10.0,130000.0,USA,White,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,China,Korean,0
 42.0,Male,2,Software Engineer,18.0,180000.0,Canada,Asian,1
-29.0,Female,1,Digital Marketing Specialist,3.0,60000.0,Canada,Asian,0
 33.0,Male,1,Marketing Manager,7.0,110000.0,Canada,Black,0
 24.0,Female,0,Sales Associate,0.0,25000.0,USA,Hispanic,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,Canada,Black,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,Australia,Asian,0
 32.0,Male,3,Data Scientist,9.0,140000.0,Canada,White,0
 22.0,Female,0,Receptionist,0.0,25000.0,USA,White,0
 37.0,Male,1,Product Manager,12.0,150000.0,USA,Asian,0
@@ -5196,11 +5015,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 35.0,Male,1,Project Manager,10.0,130000.0,China,White,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,USA,Hispanic,0
 42.0,Male,2,Software Engineer,18.0,180000.0,USA,Asian,1
-29.0,Female,1,Digital Marketing Specialist,3.0,60000.0,UK,Welsh,0
 33.0,Male,1,Marketing Manager,7.0,110000.0,USA,Asian,0
 24.0,Female,0,Sales Associate,0.0,25000.0,Canada,White,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,Australia,Australian,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,Canada,White,0
 32.0,Male,3,Data Scientist,9.0,140000.0,China,Chinese,0
 22.0,Female,0,Receptionist,0.0,25000.0,Canada,Asian,0
 37.0,Male,1,Product Manager,12.0,150000.0,USA,White,0
@@ -5224,7 +5041,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 35.0,Male,1,Project Manager,10.0,130000.0,Australia,Australian,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,UK,Asian,0
 42.0,Male,2,Software Engineer,18.0,180000.0,UK,Mixed,1
-29.0,Female,1,Digital Marketing Specialist,3.0,60000.0,Canada,White,0
 33.0,Male,1,Marketing Manager,7.0,110000.0,Australia,Asian,0
 24.0,Female,0,Sales Associate,0.0,25000.0,Canada,Asian,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,Australia,Asian,0
@@ -5235,11 +5051,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 33.0,Male,1,Project Manager,8.0,120000.0,Canada,Asian,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,UK,Welsh,0
 43.0,Male,2,Software Engineer,19.0,185000.0,UK,Welsh,1
-30.0,Female,1,Digital Marketing Specialist,4.0,65000.0,Australia,Australian,0
 34.0,Male,1,Marketing Manager,9.0,130000.0,China,Korean,0
 25.0,Female,0,Sales Associate,0.0,25000.0,Canada,White,0
 31.0,Male,2,Financial Analyst,6.0,100000.0,China,Chinese,0
-27.0,Female,1,Social Media Manager,3.0,55000.0,Canada,Black,0
 33.0,Male,3,Research Scientist,10.0,150000.0,Australia,White,0
 23.0,Female,0,Receptionist,0.0,25000.0,Australia,Australian,0
 38.0,Male,1,Product Manager,13.0,160000.0,Australia,Asian,0
@@ -5263,11 +5077,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 33.0,Male,1,Project Manager,8.0,120000.0,Australia,Asian,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,China,Chinese,0
 43.0,Male,2,Software Engineer,19.0,185000.0,UK,Mixed,1
-30.0,Female,1,Digital Marketing Specialist,4.0,65000.0,China,Chinese,0
 34.0,Male,1,Marketing Manager,9.0,130000.0,UK,Asian,0
 25.0,Female,0,Sales Associate,0.0,25000.0,Australia,Asian,0
 31.0,Male,2,Financial Analyst,6.0,100000.0,Australia,White,0
-27.0,Female,1,Social Media Manager,3.0,55000.0,USA,Hispanic,0
 33.0,Male,3,Research Scientist,10.0,150000.0,China,White,0
 23.0,Female,0,Receptionist,0.0,25000.0,UK,White,0
 38.0,Male,1,Product Manager,13.0,160000.0,Canada,Asian,0
@@ -5291,11 +5103,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 33.0,Male,1,Project Manager,8.0,120000.0,Canada,White,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,Canada,Asian,0
 43.0,Male,2,Software Engineer,19.0,185000.0,China,Chinese,1
-30.0,Female,1,Digital Marketing Specialist,4.0,65000.0,Australia,Australian,0
 34.0,Male,1,Marketing Manager,9.0,130000.0,Canada,Asian,0
 25.0,Female,0,Sales Associate,0.0,25000.0,USA,African American,0
 31.0,Male,2,Financial Analyst,6.0,100000.0,China,Chinese,0
-27.0,Female,1,Social Media Manager,3.0,55000.0,China,Chinese,0
 33.0,Male,3,Research Scientist,10.0,150000.0,Canada,Black,0
 23.0,Female,0,Receptionist,0.0,25000.0,China,White,0
 38.0,Male,1,Product Manager,13.0,160000.0,Australia,Australian,0
@@ -5319,11 +5129,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 33.0,Male,1,Project Manager,8.0,120000.0,USA,White,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,USA,Hispanic,0
 43.0,Male,2,Software Engineer,19.0,185000.0,China,White,1
-30.0,Female,1,Digital Marketing Specialist,4.0,65000.0,China,White,0
 34.0,Male,1,Marketing Manager,9.0,130000.0,China,Korean,0
 25.0,Female,0,Sales Associate,0.0,25000.0,Canada,Black,0
 31.0,Male,2,Financial Analyst,6.0,100000.0,Australia,Australian,0
-27.0,Female,1,Social Media Manager,3.0,55000.0,USA,African American,0
 33.0,Male,3,Research Scientist,10.0,150000.0,USA,White,0
 23.0,Female,0,Receptionist,0.0,25000.0,China,Chinese,0
 38.0,Male,1,Product Manager,13.0,160000.0,China,Korean,0
@@ -5347,11 +5155,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 33.0,Male,1,Project Manager,8.0,120000.0,UK,Mixed,0
 27.0,Female,1,Graphic Designer,2.0,50000.0,Australia,White,0
 43.0,Male,2,Software Engineer,19.0,185000.0,Canada,Asian,1
-30.0,Female,1,Digital Marketing Specialist,4.0,65000.0,China,Korean,0
 34.0,Male,1,Marketing Manager,9.0,130000.0,Australia,Asian,0
 25.0,Female,0,Sales Associate,0.0,25000.0,USA,Asian,0
 31.0,Male,2,Financial Analyst,6.0,100000.0,UK,Welsh,0
-27.0,Female,1,Social Media Manager,3.0,55000.0,Canada,Black,0
 33.0,Male,3,Research Scientist,10.0,150000.0,China,White,0
 27.0,Male,1,Software Engineer,3.0,85000.0,UK,Asian,0
 35.0,Female,2,Marketing Director,11.0,160000.0,Canada,Asian,0
@@ -5360,11 +5166,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 32.0,Male,1,Project Manager,8.0,120000.0,USA,African American,0
 26.0,Female,1,Graphic Designer,2.0,50000.0,USA,Hispanic,0
 41.0,Male,2,Software Engineer,19.0,185000.0,China,White,1
-29.0,Female,1,Digital Marketing Specialist,4.0,65000.0,Canada,White,0
 33.0,Male,1,Marketing Manager,9.0,130000.0,USA,African American,0
 24.0,Female,0,Sales Associate,0.0,25000.0,Canada,Black,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,UK,Welsh,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,USA,African American,0
 32.0,Male,3,Research Scientist,10.0,150000.0,Australia,Asian,0
 22.0,Female,0,Receptionist,0.0,25000.0,Canada,Black,0
 37.0,Male,1,Product Manager,13.0,160000.0,UK,Asian,0
@@ -5388,11 +5192,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 32.0,Male,1,Project Manager,8.0,120000.0,Australia,Asian,0
 26.0,Female,1,Graphic Designer,2.0,50000.0,Australia,Asian,0
 41.0,Male,2,Software Engineer,19.0,185000.0,Australia,White,1
-29.0,Female,1,Digital Marketing Specialist,4.0,65000.0,China,Chinese,0
 33.0,Male,1,Marketing Manager,9.0,130000.0,Canada,Black,0
 24.0,Female,0,Sales Associate,0.0,25000.0,UK,Asian,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,Australia,Asian,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,UK,Asian,0
 32.0,Male,3,Research Scientist,10.0,150000.0,USA,Hispanic,0
 22.0,Female,0,Receptionist,0.0,25000.0,UK,Asian,0
 37.0,Male,1,Product Manager,13.0,160000.0,Canada,Black,0
@@ -5416,11 +5218,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 32.0,Male,1,Project Manager,8.0,120000.0,China,Chinese,0
 26.0,Female,1,Graphic Designer,2.0,50000.0,Canada,Black,0
 41.0,Male,2,Software Engineer,19.0,185000.0,Canada,Asian,1
-29.0,Female,1,Digital Marketing Specialist,4.0,65000.0,China,Korean,0
 33.0,Male,1,Marketing Manager,9.0,130000.0,UK,Asian,0
 24.0,Female,0,Sales Associate,0.0,25000.0,Canada,Black,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,Australia,White,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,Canada,White,0
 32.0,Male,3,Research Scientist,10.0,150000.0,USA,Hispanic,0
 22.0,Female,0,Receptionist,0.0,25000.0,Canada,Asian,0
 37.0,Male,1,Product Manager,13.0,160000.0,UK,Mixed,0
@@ -5444,11 +5244,9 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 32.0,Male,1,Project Manager,8.0,120000.0,Australia,White,0
 26.0,Female,1,Graphic Designer,2.0,50000.0,Australia,Australian,0
 41.0,Male,2,Software Engineer,19.0,185000.0,Australia,Asian,1
-29.0,Female,1,Digital Marketing Specialist,4.0,65000.0,Australia,Australian,0
 33.0,Male,1,Marketing Manager,9.0,130000.0,Canada,White,0
 24.0,Female,0,Sales Associate,0.0,25000.0,Canada,Asian,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,China,Korean,0
-26.0,Female,1,Social Media Manager,3.0,55000.0,China,White,0
 32.0,Male,3,Research Scientist,10.0,150000.0,Canada,Black,0
 22.0,Female,0,Receptionist,0.0,25000.0,Australia,Australian,0
 37.0,Male,1,Product Manager,13.0,160000.0,UK,Welsh,0
@@ -5472,15 +5270,12 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 32.0,Male,1,Project Manager,8.0,120000.0,Australia,Asian,0
 26.0,Female,1,Graphic Designer,2.0,50000.0,China,Chinese,0
 41.0,Male,2,Software Engineer,19.0,185000.0,USA,Hispanic,1
-29.0,Female,1,Digital Marketing Specialist,4.0,65000.0,Canada,Black,0
 33.0,Male,1,Marketing Manager,9.0,130000.0,Australia,White,0
 24.0,Female,0,Sales Associate,0.0,25000.0,USA,White,0
 30.0,Male,2,Financial Analyst,6.0,100000.0,USA,White,0
-26.0,Female,1,Social Media Man,7.0,100000.0,USA,African American,0
 31.0,Male,1,Software Engineer,7.0,120000.0,Australia,White,0
 26.0,Female,1,Graphic Designer,2.0,50000.0,USA,White,0
 33.0,Male,2,Marketing Manager,9.0,130000.0,USA,White,0
-29.0,Female,0,Customer Service Representative,3.0,35000.0,UK,Welsh,0
 36.0,Male,3,Research Scientist,13.0,160000.0,UK,White,0
 27.0,Female,1,Marketing Coordinator,2.0,50000.0,China,Korean,0
 31.0,Male,1,Project Manager,6.0,100000.0,USA,White,0
@@ -5618,14 +5413,12 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 27.0,Male,1,Software Engineer,3.0,75000.0,Canada,White,0
 33.0,Female,2,Marketing Manager,8.0,120000.0,USA,Asian,0
 29.0,Male,1,Marketing Analyst,4.0,70000.0,USA,Hispanic,0
-25.0,Female,0,Customer Service Representative,1.0,30000.0,Canada,White,0
 36.0,Male,3,Research Scientist,13.0,180000.0,China,White,0
 39.0,Female,1,Financial Manager,15.0,200000.0,UK,Mixed,0
 26.0,Male,1,Product Designer,1.0,50000.0,USA,White,0
 31.0,Female,3,Data Scientist,8.0,140000.0,USA,Asian,0
 28.0,Male,1,Marketing Analyst,3.0,65000.0,UK,Mixed,0
 32.0,Female,1,Product Manager,7.0,110000.0,Australia,Australian,0
-24.0,Male,0,Delivery Driver,0.0,28000.0,UK,White,0
 37.0,Male,2,Marketing Director,14.0,190000.0,Canada,Black,0
 39.0,Female,1,Financial Manager,16.0,210000.0,UK,Mixed,0
 26.0,Male,1,Product Designer,2.0,55000.0,China,Chinese,0
@@ -5750,14 +5543,12 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 27.0,Male,1,Software Engineer,3.0,75000.0,Australia,Asian,0
 33.0,Female,2,Marketing Manager,8.0,120000.0,UK,Welsh,0
 29.0,Male,1,Marketing Analyst,4.0,70000.0,UK,White,0
-25.0,Female,0,Customer Service Representative,1.0,30000.0,USA,Asian,0
 36.0,Male,3,Research Scientist,13.0,180000.0,Canada,Black,0
 39.0,Female,1,Financial Manager,15.0,200000.0,China,Chinese,0
 26.0,Male,1,Product Designer,1.0,50000.0,USA,White,0
 31.0,Female,3,Data Scientist,8.0,140000.0,USA,White,0
 28.0,Male,1,Marketing Analyst,3.0,65000.0,UK,Welsh,0
 32.0,Female,1,Product Manager,7.0,110000.0,UK,Mixed,0
-24.0,Male,0,Delivery Driver,0.0,28000.0,Australia,White,0
 37.0,Male,2,Marketing Director,14.0,190000.0,USA,White,0
 39.0,Female,1,Financial Manager,16.0,210000.0,UK,Mixed,0
 26.0,Male,1,Product Designer,2.0,55000.0,Canada,White,0
@@ -5878,14 +5669,12 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 27.0,Male,1,Software Engineer,3.0,75000.0,Canada,Asian,0
 33.0,Female,2,Marketing Manager,8.0,120000.0,China,Korean,0
 29.0,Male,1,Marketing Analyst,4.0,70000.0,UK,Welsh,0
-25.0,Female,0,Customer Service Representative,1.0,30000.0,UK,Mixed,0
 36.0,Male,3,Research Scientist,13.0,180000.0,Canada,Asian,0
 39.0,Female,1,Financial Manager,15.0,200000.0,Australia,White,0
 26.0,Male,1,Product Designer,1.0,50000.0,Canada,White,0
 31.0,Female,3,Data Scientist,8.0,140000.0,USA,Hispanic,0
 28.0,Male,1,Marketing Analyst,3.0,65000.0,UK,Mixed,0
 32.0,Female,1,Product Manager,7.0,110000.0,UK,Asian,0
-24.0,Male,0,Delivery Driver,0.0,28000.0,Australia,Australian,0
 37.0,Male,2,Marketing Director,14.0,190000.0,China,White,0
 39.0,Female,1,Financial Manager,16.0,210000.0,Australia,Australian,0
 26.0,Male,1,Product Designer,2.0,55000.0,China,Chinese,0
@@ -6005,14 +5794,12 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 28.0,Male,1,Software Engineer,3.0,70000.0,Canada,White,0
 33.0,Female,2,Marketing Manager,9.0,135000.0,Australia,Australian,0
 29.0,Male,1,Marketing Analyst,4.0,75000.0,Canada,Black,0
-25.0,Female,0,Customer Service Representative,1.0,30000.0,UK,Mixed,0
 36.0,Male,3,Research Scientist,13.0,185000.0,UK,Mixed,0
 40.0,Female,1,Financial Manager,15.0,210000.0,Australia,Australian,0
 27.0,Male,1,Product Designer,1.0,45000.0,China,White,0
 32.0,Female,3,Data Scientist,9.0,145000.0,USA,Hispanic,0
 28.0,Male,1,Marketing Analyst,3.0,70000.0,UK,Welsh,0
 32.0,Female,1,Product Manager,7.0,120000.0,China,Chinese,0
-24.0,Male,0,Delivery Driver,0.0,28000.0,Canada,Asian,0
 38.0,Male,2,Marketing Director,14.0,195000.0,USA,White,0
 40.0,Female,1,Financial Manager,16.0,215000.0,China,White,0
 27.0,Male,1,Product Designer,2.0,55000.0,Australia,Asian,0
@@ -6122,7 +5909,6 @@ Age,Gender,Education Level,Job Title,Years of Experience,Salary,Country,Race,Sen
 33.0,Female,2,Product Manager,8.0,135000.0,USA,Hispanic,0
 27.0,Male,1,Software Engineer,2.0,70000.0,Australia,Australian,0
 36.0,Female,3,Research Director,12.0,175000.0,China,Korean,0
-24.0,Male,0,Delivery Driver,0.0,28000.0,Australia,White,0
 38.0,Male,2,Marketing Director,14.0,195000.0,Canada,Asian,0
 40.0,Female,1,Financial Manager,16.0,215000.0,Canada,Black,0
 27.0,Male,1,Product Designer,2.0,55000.0,China,Korean,0
