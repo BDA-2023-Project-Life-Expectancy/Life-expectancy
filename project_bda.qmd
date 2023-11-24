@@ -1,0 +1,126 @@
+---
+title: "project"
+format: html
+editor: visual
+---
+
+# BDA project
+
+
+
+```{r}
+SEED = 42
+library(aaltobda)
+library(rstan)
+library(dplyr)
+library(ggplot2)
+library(loo)
+library(bayesplot)
+library(gridExtra)
+library(grid)
+```
+## Introduction
+
+## Data description
+
+Here we should write about the data and preprocessing
+
+```{r}
+data = read.csv('Salary.csv')
+```
+
+
+Encoding columns
+
+
+```{r}
+data$Gender = as.integer(factor(data$Gender))
+data$Job.Title = as.integer(factor(data$Job.Title))
+data$Country = as.integer(factor(data$Country))
+data$Race = as.integer(factor(data$Race))
+```
+
+Splitting for separate model
+
+```{r}
+data1 = data %>%  filter(Gender == 1)
+data2 = data %>%  filter(Gender == 2)
+```
+
+
+
+## Models
+
+### Model 1
+
+Priors:
+$$N(110000, 50000)$$
+Likelihood:
+
+```{r}
+separate_data = list(J=2,
+                      N1=length(data1$Gender),
+                      N2=length(data2$Gender),
+                      K=length(data)-1,
+                      x1=data1[2:length(data1)],
+                      x2=data2[2:length(data2)],
+                      y1=data1[['Gender']],
+                      y2=data2[['Gender']],
+                      prior=1) 
+```
+
+Training:
+
+```{r}
+separate_fit <- stan(file = "separate_model_project.stan",
+                     data = separate_data,
+                     iter = 5000,
+                     seed = SEED)
+
+sep_samples <- extract(separate_fit)
+```
+
+
+### Model 2
+
+Priors:
+
+Likelihood:
+
+Training:
+
+## Convergence diagnostics
+
+Rhat
+
+Effective sample size
+
+Divergent transitions
+
+Conclusions
+
+## Posterior predictive checks
+
+## LOO-CV comparison
+
+## Sensitivity analysis
+
+Here we should play with priors
+
+## Discussion
+
+Here we should write about issues and potential improvements
+
+## Conclusion
+
+## Self-reflection
+
+What we've learned and struggled with
+
+## Appendix
+
+Stan code here
+
+## References
+
+
