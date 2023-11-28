@@ -28,35 +28,35 @@ parameters {
 model {
   // default priors
   if (prior == 1) {
-    alpha1 ~ normal(110000, 50000);
-    beta1 ~ normal(0, 1);
+    alpha1 ~ normal(150000, 50000);
+    beta1 ~ normal(0, 20000);
 
-    alpha2 ~ normal(110000, 50000);
-    beta2 ~ normal(0, 1);
+    alpha2 ~ normal(150000, 50000);
+    beta2 ~ normal(0, 20000);
 
 
-    sigma ~ normal(0, 10);
+    sigma ~ normal(0, 20000);
   }
   // wide priors
   else if (prior == 2) {
-    alpha1 ~ normal(110000, 100000);
-    beta1 ~ normal(0, 10);
+    alpha1 ~ normal(150000, 100000);
+    beta1 ~ normal(0, 100000);
 
-    alpha2 ~ normal(110000, 100000);
-    beta2 ~ normal(0, 10);
+    alpha2 ~ normal(150000, 100000);
+    beta2 ~ normal(0, 100000);
 
-    sigma ~ normal(0, 100);
+    sigma ~ normal(0, 100000);
 
   }
   // narrow priors
   else if (prior == 3) {
-    alpha1 ~ normal(110000, 10000);
-    beta1 ~ normal(0, 0.5);
+    alpha1 ~ normal(150000, 10000);
+    beta1 ~ normal(0, 5000);
 
-    alpha2 ~ normal(110000, 10000);
-    beta2 ~ normal(0, 0.5);
+    alpha2 ~ normal(150000, 10000);
+    beta2 ~ normal(0, 5000);
 
-    sigma ~ normal(0, 0.5);
+    sigma ~ normal(0, 5000);
   }
 
 
