@@ -6,8 +6,6 @@ editor: visual
 
 # BDA project
 
-
-
 ```{r}
 SEED = 42
 library(aaltobda)
@@ -19,6 +17,7 @@ library(bayesplot)
 library(gridExtra)
 library(grid)
 ```
+
 ## Introduction
 
 ## Data description
@@ -27,17 +26,15 @@ Here we should write about the data and preprocessing
 
 ```{r}
 data = read.csv('Salary.csv')
+head(data)
 ```
-
 
 Encoding columns
 
-
 ```{r}
 data$Gender = as.integer(factor(data$Gender))
-data$Job.Title = as.integer(factor(data$Job.Title))
-data$Country = as.integer(factor(data$Country))
-data$Race = as.integer(factor(data$Race))
+# data$Job.Title = as.integer(factor(data$Job.Title))
+# data$Country = as.integer(factor(data$Country))
 ```
 
 Splitting for separate model
@@ -47,25 +44,22 @@ data1 = data %>%  filter(Gender == 1)
 data2 = data %>%  filter(Gender == 2)
 ```
 
-
-
 ## Models
 
 ### Model 1
 
-Priors:
-$$N(110000, 50000)$$
-Likelihood:
+Priors:\
+$$N(150000, 50000)$$ Likelihood:
 
 ```{r}
 separate_data = list(J=2,
                       N1=length(data1$Gender),
                       N2=length(data2$Gender),
                       K=length(data)-1,
-                      x1=data1[2:length(data1)],
-                      x2=data2[2:length(data2)],
-                      y1=data1[['Gender']],
-                      y2=data2[['Gender']],
+                      x1=subset(data1, select = -Salary),
+                      x2=subset(data2, select = -Salary),
+                      y1=data1[['Salary']],
+                      y2=data2[['Salary']],
                       prior=1) 
 ```
 
@@ -74,32 +68,123 @@ Training:
 ```{r}
 separate_fit <- stan(file = "separate_model_project.stan",
                      data = separate_data,
-                     iter = 5000,
+                     iter = 1000,
                      seed = SEED)
 
 sep_samples <- extract(separate_fit)
 ```
 
-
 ### Model 2
 
 Priors:
 
+$$N(150000, 50000)$$
+
 Likelihood:
+
+```{r}
+hierarchical_data <- list(J=2,
+                      N1=length(data1$Gender),
+                      N2=length(data2$Gender),
+                      K=length(data)-1,
+                      x1=subset(data1, select = -Salary),
+                      x2=subset(data2, select = -Salary),
+                      y1=data1[['Salary']],
+                      y2=data2[['Salary']],
+                      prior=1)
+```
 
 Training:
 
+```{r}
+hier_fit <- stan(file = "hierarchical_project.stan",
+                     data = hierarchical_data,
+                    control = list(adapt_delta = 0.99, max_treedepth = 10),
+                     iter = 2000,
+                     seed = SEED)
+
+hier_samples <- extract(hier_fit)
+```
+
 ## Convergence diagnostics
+
+```{r}
+sep_summary <- as.data.frame(summary(separate_fit)$summary[, c('Rhat', 'n_eff')])
+sep_r_hat <- sep_summary %>% filter(Rhat > 1.05)
+sep_r_hat <- sep_r_hat$Rhat
+
+sep_n_eff <- sep_summary %>% filter(n_eff < 400)
+sep_n_eff <- sep_n_eff$n_eff
+
+hier_summary <- as.data.frame(summary(hier_fit)$summary[, c('Rhat', 'n_eff')])
+hier_r_hat <- hier_summary %>% filter(Rhat > 1.05)
+hier_r_hat <- hier_r_hat$Rhat
+
+hier_n_eff <- hier_summary %>% filter(n_eff < 400)
+hier_n_eff <- hier_n_eff$n_eff
+```
 
 Rhat
 
+```{r}
+length(sep_r_hat)
+length(hier_r_hat)
+```
+
 Effective sample size
 
+```{r}
+length(sep_n_eff)
+length(hier_n_eff)
+```
+
 Divergent transitions
+
+```{r}
+sep_sampler_params <- get_sampler_params(separate_fit, inc_warmup = FALSE)
+sep_divergent_iterations_by_chain <- sapply(sep_sampler_params, 
+                                            function(x) sum(x[, "divergent__"]))
+sum(sep_divergent_iterations_by_chain)
+```
+
+```{r}
+hier_sampler_params <- get_sampler_params(hier_fit, inc_warmup = FALSE)
+hier_divergent_iterations_by_chain <- sapply(hier_sampler_params, 
+                                             function(x) sum(x[, "divergent__"]))
+sum(hier_divergent_iterations_by_chain)
+```
 
 Conclusions
 
 ## Posterior predictive checks
+
+```{r}
+sep_y1_samp <- sample(nrow(sep_samples$y1_rep), 100)
+sep_y2_samp <- sample(nrow(sep_samples$y2_rep), 100)
+
+hier_y1_samp <- sample(nrow(hier_samples$y1_rep), 100)
+hier_y2_samp <- sample(nrow(hier_samples$y2_rep), 100)
+
+sep1 <- ppc_dens_overlay(data1$Salary, sep_samples$y1_rep[sep_y1_samp, ]) + 
+  ggtitle('Separate') + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab('Group 1')
+
+
+sep2 <- ppc_dens_overlay(data2$Salary, sep_samples$y2_rep[sep_y2_samp, ]) + 
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ylab('Group 2')
+
+hier1 <- ppc_dens_overlay(data1$Salary, hier_samples$y1_rep[hier_y1_samp, ]) + 
+  ggtitle('Hierarchical') + 
+  theme(plot.title = element_text(hjust = 0.5))
+
+hier2 <- ppc_dens_overlay(data2$Salary, hier_samples$y2_rep[hier_y2_samp, ]) + 
+  theme(plot.title = element_text(hjust = 0.5))
+
+tg <- textGrob('True distribution vs draws', gp=gpar(fontsize=16, fontface='bold'))
+grid.arrange(sep1, hier1, sep2, hier2, ncol=2, nrow=2, top=tg)
+```
 
 ## LOO-CV comparison
 
@@ -122,5 +207,3 @@ What we've learned and struggled with
 Stan code here
 
 ## References
-
-
