@@ -6,8 +6,6 @@ editor: visual
 
 # BDA project
 
-
-
 ```{r}
 SEED = 42
 library(aaltobda)
@@ -18,90 +16,269 @@ library(loo)
 library(bayesplot)
 library(gridExtra)
 library(grid)
+library(brms)
+# Globally specfiy cmdstan backend for brms
+options(brms.backend="cmdstanr")
 ```
+
 ## Introduction
+
+
+This project is dedicated to building a tech-job salary prediction. The prediction of salaries is a crucial task with far-reaching implications for both employees and employers. For individuals, it provides a basis for financial planning, career development, and overall life choices. Understanding one's potential earning trajectory is pivotal in making informed decisions about education, training, and job transitions. On the organizational front, precise salary predictions contribute to efficient resource allocation, talent acquisition, and employee retention strategies. By gaining insights into the factors influencing salary outcomes, companies can foster fair compensation practices, enhance employee satisfaction, and optimize their workforce composition.
+
+
+In this project, we will explore Bayesian techniques to model salary data, considering factors such as education, experience, industry, and geographical location. The incorporation of Bayesian methods enables us to handle uncertainty more effectively, providing probabilistic predictions rather than deterministic values.
+
+Firstly, we preprocess the data and conduct a simple explorative data analysis, then we build several models employing brms package and report their core characteristics with respect to convergence and predictive power. Then we inspect our models on prior sensitivity and compare them on LOO cross-validation. The last section of this report is dedicated to discussion and conclusions.
 
 ## Data description
 
-Here we should write about the data and preprocessing
+The dataset that we use is called 'Salary by Job Title and Country' and could be found on Kaggle (https://www.kaggle.com/datasets/amirmahdiabbootalebi/salary-by-job-title-and-country/data). To the extent of our knowledge the dataset was not used for similar Bayesian Data Analysis study. 
+
+We did some proir transformations on the dataset by removing "Race" column, removing non-frequent job titles (we kept only top-4 most frequent ones) and removing rows with high school education as a feature as there were only two of them and they could not be modeled due to the lack of information.
+
+All categorical variables were encoded with numerical lables to be further used in the modeling. The final dataset contains 8 features and 2089 observations:
+
+- **Salary**: our target variable. Continuous numerical range from ~40000 dollars per year up to ~250000 dollars per year.
+- **Age**: Age of the worker. Continuous numerical range from 22 to 62
+- **Gender**: Gender of the worker. 2 - Male, 1 - Female
+- **Education Level**: The highest education that the person acquired. 1 - Bachelor's, 2 - Master's, 3 - PhD.
+- **Job Title**: Job title of the worker. 1 - Data Analyst, 2 - Data Scientist, 3 - Software Engineer, 4 - Software Engineer Manager.
+- **Countries**: The country of employment. 1 - Australia, 2 - Canada, 3 - China, 4 - UK, 5 - USA.
+- **Years of Experience**: the number of full-time employment years. Numerical range from 0 to 34.
+- **Senior**: Binary feature showing whether the worker occupies senior position or not. 1 - Senior, 0 - not Senior.
+
+The dataset is collected from salary reporting websites and reports the data from 2022.
 
 ```{r}
 data = read.csv('Salary.csv')
+head(data)
 ```
 
+```{r}
+data$Gender = as.factor(data$Gender)
+data$Education.Level = as.factor(data$Education.Level)
+data$Job.Title = as.factor(data$Job.Title)
+data$Country = as.factor(data$Country)
+data$Senior = as.factor(data$Senior)
+```
 
-Encoding columns
+## Priors
+
+We choose weakly informative priors for our variables.
+
+**Gender**
+According to the UK statistics (https://www.diversityintech.co.uk/the-gender-pay-gap-in-tech#:~:text=Women%20earn%20up%20to%2028,is%20between%2019%2D20%25.) Gender pay gap in tech is 20%, with the median salary of 150000 dollars per year that would be 30000 variation. Therefore, the prior for this parameter weight is $Normal(0, 30000)$
+
+**Age and Years of Experience**
+
+These variables will be correlated, therefore we set similar priors for them. According to the Dice tech salary report  the salary grows by up to 10% per year. Therefore, the prior for these parameter weights is $Normal(0, 15000)$
+
+
+**Education Level**
+
+Data check (https://datacheckinc.com/blog/educational-background-affect-salary/) reports up to 25% salary differences between different diploma holders. Therefore, the prior for this parameter is $Normal(0, 40000)$.
+
+**Job Title and Country**
+
+These are quite tricky parameters, therefore we decided to be in the safe side and choose wider prior for these parameter weights, setting it to $Normal(0, 50000)$. These parameters are interconnected and different job titles can earn different money in different countries.
+
+**Seniority**
+
+Indeed.inc (https://www.linkedin.com/pulse/whats-difference-between-senior-developer-junior-anyway-esteemed/) reports that senior can make twice as much as junior in tech position. Therefore, we set the prior for this parameter weight to $Normal(0, 70000)$ as it seems to be one of the most impactful parameters.
+
+## Model 1
+
+In this project we decided to build several models:
+
+1. Simple linear model with all features
+
+This model was chosen as the simplest estimate and a good first step in Bayesian Data Analysis. We do not expect this model to work very well as the data and the feature interactions are quite complex and probably the linear model won't be able to explain all variations. The salary cannot be negative, therefore we are trying to estimate the target with lognormal distribution family.
+
+```{r}
+priors <- c(
+  prior(normal(0, log(40000)), coef = 'Education.Level2'),
+  prior(normal(0, log(40000)), coef = 'Education.Level3'),
+  prior(normal(0, log(15000)), coef = 'Years.of.Experience'),
+  prior(normal(0, log(70000)), coef = 'Senior1'),
+  prior(normal(0, log(30000)), coef = 'Gender2'),
+  prior(normal(0, log(15000)), coef = 'Age'),
+  prior(normal(0, log(50000)), coef = 'Job.Title2'),
+  prior(normal(0, log(50000)), coef = 'Job.Title3'),
+  prior(normal(0, log(50000)), coef = 'Job.Title4'),
+  prior(normal(0, log(50000)), coef = 'Country2'),
+  prior(normal(0, log(50000)), coef = 'Country3'),
+  prior(normal(0, log(50000)), coef = 'Country4'),
+  prior(normal(0, log(50000)), coef = 'Country5')
+)
+
+f_linear <- brms::brm(
+  # This specifies the formula
+  Salary ~ 1 + Education.Level + Years.of.Experience + Job.Title + Senior + Gender + Country + Age,
+  # This specifies the dataset
+  data = data,
+  # This specifies the observation model family
+  family = lognormal,
+  # This passes the priors specified above to brms
+  prior = priors,
+  cores = parallel::detectCores(),
+  # This causes brms to cache the results
+  file='f_linear',
+  file_refit="on_change"
+)
+```
+
 
 
 ```{r}
-data$Gender = as.integer(factor(data$Gender))
-data$Job.Title = as.integer(factor(data$Job.Title))
-data$Country = as.integer(factor(data$Country))
-data$Race = as.integer(factor(data$Race))
+brms::pp_check(f_linear) + coord_cartesian(xlim=c(50000, 300000))
 ```
-
-Splitting for separate model
+```{r}
+summary(f_linear)
+```
 
 ```{r}
-data1 = data %>%  filter(Gender == 1)
-data2 = data %>%  filter(Gender == 2)
+rmse(f_linear)
 ```
 
+2. Hierarchical model with Job Title and Country as hierarchy levels
 
-
-## Models
-
-### Model 1
-
-Priors:
-$$N(110000, 50000)$$
-Likelihood:
+This model comes from an intuition that the salaries may vary depending on the country and on the job title, therefore we add these features as hierarchical. 
 
 ```{r}
-separate_data = list(J=2,
-                      N1=length(data1$Gender),
-                      N2=length(data2$Gender),
-                      K=length(data)-1,
-                      x1=data1[2:length(data1)],
-                      x2=data2[2:length(data2)],
-                      y1=data1[['Gender']],
-                      y2=data2[['Gender']],
-                      prior=1) 
-```
+priors <- c(
+  prior(normal(0, log(40000)), coef = 'Education.Level2'),
+  prior(normal(0, log(40000)), coef = 'Education.Level3'),
+  prior(normal(0, log(15000)), coef = 'Years.of.Experience'),
+  prior(normal(0, log(70000)), coef = 'Senior1'),
+  prior(normal(0, log(30000)), coef = 'Gender2'),
+  #prior(normal(0, log(15000)), coef = 'Age'),
+  prior(normal(0, log(50000)), coef = 'Job.Title2'),
+  prior(normal(0, log(50000)), coef = 'Job.Title3'),
+  prior(normal(0, log(50000)), coef = 'Job.Title4'),
+  prior(normal(0, log(50000)), coef = 'Country2'),
+  prior(normal(0, log(50000)), coef = 'Country3'),
+  prior(normal(0, log(50000)), coef = 'Country4'),
+  prior(normal(0, log(50000)), coef = 'Country5')
+)
 
-Training:
+f_h <- brms::brm(
+  # This specifies the formula
+  Salary ~ 1 + Education.Level + Years.of.Experience + Job.Title + Country + Senior + Gender + (1 | Job.Title) + (1 | Country),
+  # This specifies the dataset
+  data = data,
+  # This specifies the observation model family
+  family = lognormal,
+  # This passes the priors specified above to brms
+  prior = priors,
+  cores = parallel::detectCores(),
+  # This causes brms to cache the results
+  file='f_hierarchical',
+  file_refit="on_change"
+)
+```
 
 ```{r}
-separate_fit <- stan(file = "separate_model_project.stan",
-                     data = separate_data,
-                     iter = 5000,
-                     seed = SEED)
-
-sep_samples <- extract(separate_fit)
+brms::pp_check(f_h) + coord_cartesian(xlim=c(50000, 300000))
+```
+```{r}
+summary(f_h)
 ```
 
 
-### Model 2
+```{r}
+rmse(f_h)
+```
 
-Priors:
+3. Mixture model
 
-Likelihood:
+```{r}
+mix = mixture(lognormal, lognormal, order = 'mu')
 
-Training:
+priors <- c(
+)
 
-## Convergence diagnostics
+f_mix <- brms::brm(
+  # This specifies the formula
+  Salary ~ 1 + Education.Level + Senior + Years.of.Experience + Job.Title + Country, # Senior + Gender + Job.Title + Country + Age
+  # This specifies the dataset
+  data = data,
+  # This specifies the observation model family
+  family = mix,
+  # This passes the priors specified above to brms
+  chains=1,
+  prior = priors,
+  cores = parallel::detectCores(),
+  # This causes brms to cache the results
+)
+```
 
-Rhat
 
-Effective sample size
+```{r}
+brms::pp_check(f_mix) + coord_cartesian(xlim=c(50000, 300000))
+```
 
-Divergent transitions
+```{r}
+summary(f_mix)
+```
 
-Conclusions
 
-## Posterior predictive checks
+```{r}
+rmse(f_mix)
+```
 
 ## LOO-CV comparison
+
+
+```{r}
+loo_f1 = loo(f_linear) 
+loo_f2 = loo(f_h)
+loo_f3 = loo(f_mix)
+compare = loo_compare(loo_f1, loo_f2, loo_f3)
+compare
+```
+
+
+
+```{r fig.height=3, fig.width=8, echo=FALSE, fig.align="center"}
+f1 <- ggplot() + 
+  geom_point(aes(x=seq(1:length(pareto_k_values(loo_f1))), 
+                 y=pareto_k_values(loo_f1)), shape=3, color='darkblue') +
+  geom_hline(yintercept=0.7, color='red', linetype='solid', size=0.8) +
+  geom_hline(yintercept=0.5, color='darkred', linetype='dashed', size=0.8) +
+  ggtitle('Li') +
+  xlab('Datapoints') +
+  ylab('Pareto shape k values') +
+  geom_text(aes(0, 0.7, label = 0.7, vjust=1.2, hjust=0)) +
+  geom_text(aes(0, 0.5, label = 0.5, vjust=1.2, hjust=0)) +
+  theme_bw()
+
+f2 <- ggplot() + 
+  geom_point(aes(x=seq(1:length(pareto_k_values(loo_f2))), 
+                 y=pareto_k_values(loo_f2)), shape=3, color='darkblue') +
+  geom_hline(yintercept=0.7, color='red', linetype='solid', size=0.8) +
+  geom_hline(yintercept=0.5, color='darkred', linetype='dashed', size=0.8) +
+  ggtitle('Hierarhical model') +
+  xlab('Datapoints') +
+  ylab('Pareto shape k values') +
+  geom_text(aes(0, 0.7, label = 0.7, vjust=1.2, hjust=0)) +
+  geom_text(aes(0, 0.5, label = 0.5, vjust=1.2, hjust=0)) +
+  theme_bw()
+
+f3 <- ggplot() + 
+  geom_point(aes(x=seq(1:length(pareto_k_values(loo_f3))), 
+                 y=pareto_k_values(loo_f3)), shape=3, color='darkblue') +
+  geom_hline(yintercept=0.7, color='red', linetype='solid', size=0.8) +
+  geom_hline(yintercept=0.5, color='darkred', linetype='dashed', size=0.8) +
+  ggtitle('Mixture model') +
+  xlab('Datapoints') +
+  ylab('Pareto shape k values') +
+  geom_text(aes(0, 0.7, label = 0.7, vjust=1.2, hjust=0)) +
+  geom_text(aes(0, 0.5, label = 0.5, vjust=1.2, hjust=0)) +
+  theme_bw()
+
+grid.arrange(f1, f2, f3, nrow=3)
+```
 
 ## Sensitivity analysis
 
@@ -122,5 +299,3 @@ What we've learned and struggled with
 Stan code here
 
 ## References
-
-
